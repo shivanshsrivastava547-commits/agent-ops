@@ -1,0 +1,102 @@
+from dataclasses import dataclass, field
+from pathlib import Path
+
+
+@dataclass(frozen=True)
+class RetrievalConfig:
+    """
+    Configuration for the document retrieval pipeline.
+
+    Keeping retrieval settings in one place makes it easy to run
+    experiments later with different chunk sizes, top-k values,
+    embedding models, etc.
+    """
+
+    # ---------------------------------------------------------
+    # Project paths
+    # ---------------------------------------------------------
+
+    project_root: Path = (
+    Path(__file__).resolve().parents[2]
+    )
+    knowledge_base_dir: Path = (
+        project_root / "data" / "knowledge_base"
+    )
+
+    vector_store_dir: Path = (
+        project_root / "data" / "vectorstore"
+    )
+
+    # ---------------------------------------------------------
+    # Chunking
+    # ---------------------------------------------------------
+
+    chunk_size: int = 500
+    chunk_overlap: int = 75
+
+    # ---------------------------------------------------------
+    # Retrieval
+    # ---------------------------------------------------------
+
+    top_k: int = 5
+
+    # Number of candidates retrieved before
+    # optional reranking.
+#     candidate_k: list[int] = field(
+#     default_factory=lambda: [10, 15, 20, 30]
+# )
+    #Now we find optimum configurations freeze it 
+    candidate_k = 20
+
+    # ---------------------------------------------------------
+    # Embeddings
+    # ---------------------------------------------------------
+
+    # embedding_model: str = "gemini-embedding-001"
+    embedding_model: str = (
+    "BAAI/bge-small-en-v1.5"
+)
+#     embedding_model: str = (
+#     "text-embedding-3-large"
+# )
+#     embedding_model: str = (
+#     "text-embedding-3-small"
+# )
+# embeddings = GoogleGenerativeAIEmbeddings(
+#     model="gemini-embedding-001"
+# )
+
+    # ---------------------------------------------------------
+    # Retrieval thresholds
+    # ---------------------------------------------------------
+
+    # FAISS similarity score interpretation depends on the
+    # index/retriever configuration, so this will not be used
+    # blindly. It is here for future experiments.
+    min_score: float = 0.0
+
+    # ---------------------------------------------------------
+    # Runtime options
+    # ---------------------------------------------------------
+
+    # ---------------------------------------------------------
+    # Retrieval improvements
+    # ---------------------------------------------------------
+
+    use_metadata_filtering: bool = True
+
+    # Diversification experiment
+    use_diversification: bool = True
+    max_chunks_per_document: int = 1
+    # Reranking
+    
+    use_reranker: bool = True
+    reranker_model: str = "BAAI/bge-reranker-base"
+    reranker_max_length: int = 512
+    reranker_batch_size: int = 16
+
+    #query_Expansion
+    use_query_expansion: bool = False    
+
+# Single shared configuration object
+retrieval_config = RetrievalConfig()

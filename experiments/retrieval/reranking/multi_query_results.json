@@ -1,0 +1,748 @@
+{
+  "baseline": {
+    "use_multi_query_expansion": false,
+    "candidate_k": 20,
+    "top_k": 5,
+    "mean_retrieval_latency_ms": 131.83466666666666,
+    "recall_at_1": 0.20416666666666666,
+    "recall_at_3": 0.45694444444444443,
+    "recall_at_5": 0.6236111111111111,
+    "precision_at_1": 0.9166666666666666,
+    "precision_at_3": 0.7222222222222222,
+    "precision_at_5": 0.6,
+    "hit_rate_at_1": 0.9166666666666666,
+    "hit_rate_at_3": 1.0,
+    "hit_rate_at_5": 1.0,
+    "mrr": 0.9583333333333334,
+    "diversity_at_5": 1.0,
+    "per_query": [
+      {
+        "query": "Why could customers be charged twice after a payment timeout?",
+        "retrieval_queries": [
+          "Why could customers be charged twice after a payment timeout?"
+        ],
+        "candidate_pool_size": 20,
+        "raw_candidate_count": 20,
+        "unique_candidate_documents": 10,
+        "recall_at_1": 0.16666666666666666,
+        "recall_at_3": 0.5,
+        "recall_at_5": 0.8333333333333334,
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "precision_at_5": 1.0,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 627.746,
+        "documents": [
+          "incident-inc-001",
+          "incident-inc-017",
+          "svc-payment",
+          "ts-duplicate-payment",
+          "rb-payment-timeout"
+        ]
+      },
+      {
+        "query": "How should a payment timeout be investigated?",
+        "retrieval_queries": [
+          "How should a payment timeout be investigated?"
+        ],
+        "candidate_pool_size": 20,
+        "raw_candidate_count": 20,
+        "unique_candidate_documents": 9,
+        "recall_at_1": 0.16666666666666666,
+        "recall_at_3": 0.5,
+        "recall_at_5": 0.6666666666666666,
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "precision_at_5": 0.8,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 126.599,
+        "documents": [
+          "rb-payment-timeout",
+          "svc-payment",
+          "ts-duplicate-payment",
+          "incident-inc-001",
+          "arch-service-architecture"
+        ]
+      },
+      {
+        "query": "Why do authentication failures happen after key rotation?",
+        "retrieval_queries": [
+          "Why do authentication failures happen after key rotation?"
+        ],
+        "candidate_pool_size": 20,
+        "raw_candidate_count": 20,
+        "unique_candidate_documents": 10,
+        "recall_at_1": 0.16666666666666666,
+        "recall_at_3": 0.5,
+        "recall_at_5": 0.8333333333333334,
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "precision_at_5": 1.0,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 77.326,
+        "documents": [
+          "svc-auth",
+          "ts-login-failure",
+          "api-auth",
+          "incident-inc-003",
+          "rb-auth-failure"
+        ]
+      },
+      {
+        "query": "How should API latency incidents be investigated?",
+        "retrieval_queries": [
+          "How should API latency incidents be investigated?"
+        ],
+        "candidate_pool_size": 20,
+        "raw_candidate_count": 20,
+        "unique_candidate_documents": 16,
+        "recall_at_1": 0.0,
+        "recall_at_3": 0.25,
+        "recall_at_5": 0.5,
+        "precision_at_1": 0.0,
+        "precision_at_3": 0.3333333333333333,
+        "precision_at_5": 0.4,
+        "hit_rate_at_1": 0.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 0.5,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 91.7,
+        "documents": [
+          "rb-notification-backlog",
+          "rb-api-latency",
+          "rb-webhook-failure",
+          "arch-dependency-graph",
+          "svc-api"
+        ]
+      },
+      {
+        "query": "What causes elevated API latency when a downstream service becomes slow?",
+        "retrieval_queries": [
+          "What causes elevated API latency when a downstream service becomes slow?"
+        ],
+        "candidate_pool_size": 20,
+        "raw_candidate_count": 20,
+        "unique_candidate_documents": 13,
+        "recall_at_1": 0.16666666666666666,
+        "recall_at_3": 0.5,
+        "recall_at_5": 0.6666666666666666,
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "precision_at_5": 0.8,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 98.034,
+        "documents": [
+          "arch-service-architecture",
+          "svc-api",
+          "incident-inc-002",
+          "ts-slow-api",
+          "incident-inc-011"
+        ]
+      },
+      {
+        "query": "What should be checked when notification queues become saturated?",
+        "retrieval_queries": [
+          "What should be checked when notification queues become saturated?"
+        ],
+        "candidate_pool_size": 20,
+        "raw_candidate_count": 20,
+        "unique_candidate_documents": 12,
+        "recall_at_1": 0.25,
+        "recall_at_3": 0.75,
+        "recall_at_5": 0.75,
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "precision_at_5": 0.6,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 73.616,
+        "documents": [
+          "incident-inc-004",
+          "rb-notification-backlog",
+          "svc-notification",
+          "rb-webhook-failure",
+          "arch-service-architecture"
+        ]
+      },
+      {
+        "query": "Why are invoice and password-reset emails delayed?",
+        "retrieval_queries": [
+          "Why are invoice and password-reset emails delayed?"
+        ],
+        "candidate_pool_size": 20,
+        "raw_candidate_count": 20,
+        "unique_candidate_documents": 17,
+        "recall_at_1": 0.25,
+        "recall_at_3": 0.25,
+        "recall_at_5": 0.25,
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.3333333333333333,
+        "precision_at_5": 0.2,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 63.493,
+        "documents": [
+          "incident-inc-004",
+          "incident-inc-022",
+          "incident-inc-009",
+          "incident-inc-008",
+          "svc-subscription"
+        ]
+      },
+      {
+        "query": "Why can subscription upgrades remain pending?",
+        "retrieval_queries": [
+          "Why can subscription upgrades remain pending?"
+        ],
+        "candidate_pool_size": 20,
+        "raw_candidate_count": 20,
+        "unique_candidate_documents": 10,
+        "recall_at_1": 0.2,
+        "recall_at_3": 0.4,
+        "recall_at_5": 0.4,
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.6666666666666666,
+        "precision_at_5": 0.4,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 91.635,
+        "documents": [
+          "svc-subscription",
+          "incident-inc-005",
+          "arch-dependency-graph",
+          "incident-inc-002",
+          "incident-inc-011"
+        ]
+      },
+      {
+        "query": "How should webhook delivery failures be investigated?",
+        "retrieval_queries": [
+          "How should webhook delivery failures be investigated?"
+        ],
+        "candidate_pool_size": 20,
+        "raw_candidate_count": 20,
+        "unique_candidate_documents": 14,
+        "recall_at_1": 0.16666666666666666,
+        "recall_at_3": 0.3333333333333333,
+        "recall_at_5": 0.5,
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.6666666666666666,
+        "precision_at_5": 0.6,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 94.626,
+        "documents": [
+          "ts-webhook-failure",
+          "arch-dependency-graph",
+          "incident-inc-018",
+          "incident-inc-025",
+          "incident-inc-005"
+        ]
+      },
+      {
+        "query": "What causes stale search results?",
+        "retrieval_queries": [
+          "What causes stale search results?"
+        ],
+        "candidate_pool_size": 20,
+        "raw_candidate_count": 20,
+        "unique_candidate_documents": 13,
+        "recall_at_1": 0.25,
+        "recall_at_3": 0.5,
+        "recall_at_5": 0.75,
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.6666666666666666,
+        "precision_at_5": 0.6,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 72.517,
+        "documents": [
+          "svc-search",
+          "svc-auth",
+          "incident-inc-006",
+          "incident-inc-003",
+          "incident-inc-019"
+        ]
+      },
+      {
+        "query": "How should object storage upload failures be investigated?",
+        "retrieval_queries": [
+          "How should object storage upload failures be investigated?"
+        ],
+        "candidate_pool_size": 20,
+        "raw_candidate_count": 20,
+        "unique_candidate_documents": 16,
+        "recall_at_1": 0.3333333333333333,
+        "recall_at_3": 0.6666666666666666,
+        "recall_at_5": 1.0,
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.6666666666666666,
+        "precision_at_5": 0.6,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 74.011,
+        "documents": [
+          "incident-inc-007",
+          "ts-storage-failures",
+          "svc-webhook",
+          "svc-invoice",
+          "incident-inc-020"
+        ]
+      },
+      {
+        "query": "What should we investigate when valid users receive unexpected 429 responses?",
+        "retrieval_queries": [
+          "What should we investigate when valid users receive unexpected 429 responses?"
+        ],
+        "candidate_pool_size": 20,
+        "raw_candidate_count": 20,
+        "unique_candidate_documents": 18,
+        "recall_at_1": 0.3333333333333333,
+        "recall_at_3": 0.3333333333333333,
+        "recall_at_5": 0.3333333333333333,
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.3333333333333333,
+        "precision_at_5": 0.2,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 90.713,
+        "documents": [
+          "incident-inc-010",
+          "arch-dependency-graph",
+          "rb-webhook-failure",
+          "api-payment",
+          "incident-inc-003"
+        ]
+      }
+    ],
+    "mean_candidate_pool_size": 20,
+    "mean_unique_candidate_documents": 13.166666666666666,
+    "mean_raw_candidate_count": 20
+  },
+  "multi_query": {
+    "use_multi_query_expansion": true,
+    "candidate_k": 20,
+    "top_k": 5,
+    "mean_retrieval_latency_ms": 134.36675,
+    "recall_at_1": 0.20416666666666666,
+    "recall_at_3": 0.45694444444444443,
+    "recall_at_5": 0.6444444444444445,
+    "precision_at_1": 0.9166666666666666,
+    "precision_at_3": 0.7222222222222222,
+    "precision_at_5": 0.6166666666666667,
+    "hit_rate_at_1": 0.9166666666666666,
+    "hit_rate_at_3": 1.0,
+    "hit_rate_at_5": 1.0,
+    "mrr": 0.9583333333333334,
+    "diversity_at_5": 1.0,
+    "per_query": [
+      {
+        "query": "Why could customers be charged twice after a payment timeout?",
+        "retrieval_queries": [
+          "Why could customers be charged twice after a payment timeout?",
+          "Why could customers be charged twice after a payment timeout? duplicate payment transaction",
+          "Why could customers be charged twice after a payment timeout? payment retry idempotency",
+          "Why could customers be charged twice after a payment timeout? duplicate charge payment attempt"
+        ],
+        "candidate_pool_size": 29,
+        "raw_candidate_count": 80,
+        "unique_candidate_documents": 14,
+        "recall_at_1": 0.16666666666666666,
+        "recall_at_3": 0.5,
+        "recall_at_5": 0.8333333333333334,
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "precision_at_5": 1.0,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 162.655,
+        "documents": [
+          "incident-inc-001",
+          "incident-inc-017",
+          "svc-payment",
+          "ts-duplicate-payment",
+          "rb-payment-timeout"
+        ]
+      },
+      {
+        "query": "How should a payment timeout be investigated?",
+        "retrieval_queries": [
+          "How should a payment timeout be investigated?",
+          "How should a payment timeout be investigated? payment retry timeout",
+          "How should a payment timeout be investigated? payment attempt idempotency",
+          "How should a payment timeout be investigated? duplicate transaction timeout"
+        ],
+        "candidate_pool_size": 29,
+        "raw_candidate_count": 80,
+        "unique_candidate_documents": 11,
+        "recall_at_1": 0.16666666666666666,
+        "recall_at_3": 0.5,
+        "recall_at_5": 0.6666666666666666,
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "precision_at_5": 0.8,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 170.605,
+        "documents": [
+          "rb-payment-timeout",
+          "svc-payment",
+          "ts-duplicate-payment",
+          "arch-data-flow",
+          "incident-inc-001"
+        ]
+      },
+      {
+        "query": "Why do authentication failures happen after key rotation?",
+        "retrieval_queries": [
+          "Why do authentication failures happen after key rotation?",
+          "Why do authentication failures happen after key rotation? authentication login credentials failure",
+          "Why do authentication failures happen after key rotation? API key token invalid",
+          "Why do authentication failures happen after key rotation? authentication configuration key rotation"
+        ],
+        "candidate_pool_size": 25,
+        "raw_candidate_count": 80,
+        "unique_candidate_documents": 12,
+        "recall_at_1": 0.16666666666666666,
+        "recall_at_3": 0.5,
+        "recall_at_5": 0.8333333333333334,
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "precision_at_5": 1.0,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 112.817,
+        "documents": [
+          "svc-auth",
+          "ts-login-failure",
+          "api-auth",
+          "incident-inc-003",
+          "rb-auth-failure"
+        ]
+      },
+      {
+        "query": "How should API latency incidents be investigated?",
+        "retrieval_queries": [
+          "How should API latency incidents be investigated?"
+        ],
+        "candidate_pool_size": 20,
+        "raw_candidate_count": 20,
+        "unique_candidate_documents": 16,
+        "recall_at_1": 0.0,
+        "recall_at_3": 0.25,
+        "recall_at_5": 0.5,
+        "precision_at_1": 0.0,
+        "precision_at_3": 0.3333333333333333,
+        "precision_at_5": 0.4,
+        "hit_rate_at_1": 0.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 0.5,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 93.778,
+        "documents": [
+          "rb-notification-backlog",
+          "rb-api-latency",
+          "rb-webhook-failure",
+          "arch-dependency-graph",
+          "svc-api"
+        ]
+      },
+      {
+        "query": "What causes elevated API latency when a downstream service becomes slow?",
+        "retrieval_queries": [
+          "What causes elevated API latency when a downstream service becomes slow?"
+        ],
+        "candidate_pool_size": 20,
+        "raw_candidate_count": 20,
+        "unique_candidate_documents": 13,
+        "recall_at_1": 0.16666666666666666,
+        "recall_at_3": 0.5,
+        "recall_at_5": 0.6666666666666666,
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "precision_at_5": 0.8,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 97.46,
+        "documents": [
+          "arch-service-architecture",
+          "svc-api",
+          "incident-inc-002",
+          "ts-slow-api",
+          "incident-inc-011"
+        ]
+      },
+      {
+        "query": "What should be checked when notification queues become saturated?",
+        "retrieval_queries": [
+          "What should be checked when notification queues become saturated?",
+          "What should be checked when notification queues become saturated? notification queue backlog",
+          "What should be checked when notification queues become saturated? message consumer processing delay",
+          "What should be checked when notification queues become saturated? queue saturation worker processing"
+        ],
+        "candidate_pool_size": 30,
+        "raw_candidate_count": 80,
+        "unique_candidate_documents": 18,
+        "recall_at_1": 0.25,
+        "recall_at_3": 0.75,
+        "recall_at_5": 1.0,
+        "precision_at_1": 1.0,
+        "precision_at_3": 1.0,
+        "precision_at_5": 0.8,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 115.095,
+        "documents": [
+          "svc-worker",
+          "incident-inc-004",
+          "rb-notification-backlog",
+          "svc-notification",
+          "rb-webhook-failure"
+        ]
+      },
+      {
+        "query": "Why are invoice and password-reset emails delayed?",
+        "retrieval_queries": [
+          "Why are invoice and password-reset emails delayed?",
+          "Why are invoice and password-reset emails delayed? email delivery notification queue",
+          "Why are invoice and password-reset emails delayed? email worker consumer backlog",
+          "Why are invoice and password-reset emails delayed? notification processing delay"
+        ],
+        "candidate_pool_size": 41,
+        "raw_candidate_count": 80,
+        "unique_candidate_documents": 28,
+        "recall_at_1": 0.25,
+        "recall_at_3": 0.25,
+        "recall_at_5": 0.25,
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.3333333333333333,
+        "precision_at_5": 0.2,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 181.837,
+        "documents": [
+          "incident-inc-004",
+          "incident-inc-022",
+          "incident-inc-009",
+          "incident-inc-008",
+          "svc-subscription"
+        ]
+      },
+      {
+        "query": "Why can subscription upgrades remain pending?",
+        "retrieval_queries": [
+          "Why can subscription upgrades remain pending?",
+          "Why can subscription upgrades remain pending? subscription upgrade payment processing",
+          "Why can subscription upgrades remain pending? subscription state transition",
+          "Why can subscription upgrades remain pending? upgrade dependency payment state"
+        ],
+        "candidate_pool_size": 27,
+        "raw_candidate_count": 80,
+        "unique_candidate_documents": 16,
+        "recall_at_1": 0.2,
+        "recall_at_3": 0.4,
+        "recall_at_5": 0.4,
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.6666666666666666,
+        "precision_at_5": 0.4,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 135.228,
+        "documents": [
+          "svc-subscription",
+          "incident-inc-005",
+          "arch-dependency-graph",
+          "incident-inc-002",
+          "incident-inc-011"
+        ]
+      },
+      {
+        "query": "How should webhook delivery failures be investigated?",
+        "retrieval_queries": [
+          "How should webhook delivery failures be investigated?",
+          "How should webhook delivery failures be investigated? webhook retry timeout downstream endpoint",
+          "How should webhook delivery failures be investigated? webhook delivery failure response",
+          "How should webhook delivery failures be investigated? webhook endpoint availability retry"
+        ],
+        "candidate_pool_size": 26,
+        "raw_candidate_count": 80,
+        "unique_candidate_documents": 16,
+        "recall_at_1": 0.16666666666666666,
+        "recall_at_3": 0.3333333333333333,
+        "recall_at_5": 0.5,
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.6666666666666666,
+        "precision_at_5": 0.6,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 119.847,
+        "documents": [
+          "ts-webhook-failure",
+          "arch-dependency-graph",
+          "incident-inc-018",
+          "incident-inc-025",
+          "incident-inc-005"
+        ]
+      },
+      {
+        "query": "What causes stale search results?",
+        "retrieval_queries": [
+          "What causes stale search results?",
+          "What causes stale search results? search index stale results",
+          "What causes stale search results? indexing refresh synchronization",
+          "What causes stale search results? search cache index consistency"
+        ],
+        "candidate_pool_size": 31,
+        "raw_candidate_count": 80,
+        "unique_candidate_documents": 21,
+        "recall_at_1": 0.25,
+        "recall_at_3": 0.5,
+        "recall_at_5": 0.75,
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.6666666666666666,
+        "precision_at_5": 0.6,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 110.262,
+        "documents": [
+          "svc-search",
+          "svc-auth",
+          "incident-inc-006",
+          "incident-inc-003",
+          "incident-inc-019"
+        ]
+      },
+      {
+        "query": "How should object storage upload failures be investigated?",
+        "retrieval_queries": [
+          "How should object storage upload failures be investigated?",
+          "How should object storage upload failures be investigated? object storage upload timeout",
+          "How should object storage upload failures be investigated? storage upload retry permission",
+          "How should object storage upload failures be investigated? object storage failure connectivity"
+        ],
+        "candidate_pool_size": 35,
+        "raw_candidate_count": 80,
+        "unique_candidate_documents": 26,
+        "recall_at_1": 0.3333333333333333,
+        "recall_at_3": 0.6666666666666666,
+        "recall_at_5": 1.0,
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.6666666666666666,
+        "precision_at_5": 0.6,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 168.344,
+        "documents": [
+          "incident-inc-007",
+          "ts-storage-failures",
+          "svc-webhook",
+          "svc-invoice",
+          "incident-inc-020"
+        ]
+      },
+      {
+        "query": "What should we investigate when valid users receive unexpected 429 responses?",
+        "retrieval_queries": [
+          "What should we investigate when valid users receive unexpected 429 responses?",
+          "What should we investigate when valid users receive unexpected 429 responses? HTTP 429 rate limiting",
+          "What should we investigate when valid users receive unexpected 429 responses? API throttling request limit",
+          "What should we investigate when valid users receive unexpected 429 responses? rate limiter request rejection"
+        ],
+        "candidate_pool_size": 30,
+        "raw_candidate_count": 80,
+        "unique_candidate_documents": 24,
+        "recall_at_1": 0.3333333333333333,
+        "recall_at_3": 0.3333333333333333,
+        "recall_at_5": 0.3333333333333333,
+        "precision_at_1": 1.0,
+        "precision_at_3": 0.3333333333333333,
+        "precision_at_5": 0.2,
+        "hit_rate_at_1": 1.0,
+        "hit_rate_at_3": 1.0,
+        "hit_rate_at_5": 1.0,
+        "mrr": 1.0,
+        "diversity_at_5": 1.0,
+        "retrieval_time_ms": 144.473,
+        "documents": [
+          "incident-inc-010",
+          "arch-dependency-graph",
+          "rb-webhook-failure",
+          "api-payment",
+          "incident-inc-003"
+        ]
+      }
+    ],
+    "mean_candidate_pool_size": 28.583333333333332,
+    "mean_unique_candidate_documents": 17.916666666666668,
+    "mean_raw_candidate_count": 70
+  }
+}
